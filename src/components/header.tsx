@@ -4,8 +4,8 @@ import "./header.css";
 function Header() {
   return (
     <div class="header">
-      <img src={logo}></img>
-      <div>
+      <img class="logo" src={logo}></img>
+      <div class="navbar">
         <a>Accueil</a>
         <a>A Propos</a>
       </div>
