@@ -22,3 +22,15 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+@media screen and (max-width: 730px) {
+  .logo {
+    width: 9.0625rem;
+    height: 2.9375rem;
+  }
+
+  .navbar {
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+}
