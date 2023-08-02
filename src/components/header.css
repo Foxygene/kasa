@@ -7,13 +7,19 @@
   color: var(--red);
 }
 
+.logo {
+  width: 9.0625rem;
+  height: 2.9375rem;
+}
+
 .navbar {
+  font-size: 1rem;
+  text-transform: uppercase;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 15rem;
   margin-left: 1rem;
-  font-size: 1.5rem;
   font-family: Montserrat;
   white-space: nowrap;
 }
@@ -23,14 +29,9 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 730px) {
-  .logo {
-    width: 9.0625rem;
-    height: 2.9375rem;
-  }
-
+@media screen and (min-width: 768px) {
   .navbar {
-    font-size: 1rem;
-    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-transform: capitalize;
   }
 }
