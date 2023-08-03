@@ -3,9 +3,9 @@ import "./header.css";
 
 function Header() {
   return (
-    <div class="header">
-      <img class="logo" src={logo}></img>
-      <div class="navbar">
+    <div className="header">
+      <img className="logo" src={logo}></img>
+      <div className="navbar">
         <a>Accueil</a>
         <a>A Propos</a>
       </div>
