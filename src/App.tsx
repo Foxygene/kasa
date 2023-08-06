@@ -1,5 +1,6 @@
 import "./App.css";
 import Banner from "./components/banner";
+import Card from "./components/card";
 import Header from "./components/header";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header></Header>
       <Banner></Banner>
+      <Card></Card>
     </>
   );
 }

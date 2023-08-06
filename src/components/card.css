@@ -1,0 +1,17 @@
+.card {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 15.9375rem;
+  border-radius: 0.625rem;
+  background: linear-gradient(180deg, #ff6060 0%, #c54a4a 100%);
+}
+
+.card a {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%; /* 1.60425rem */
+  margin: 0.94rem 1.23rem;
+}
