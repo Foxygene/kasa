@@ -4,6 +4,7 @@
   height: 15.9375rem;
   border-radius: 0.625rem;
   background: linear-gradient(180deg, #ff6060 0%, #c54a4a 100%);
+  background-size: cover;
 }
 
 .card a {
