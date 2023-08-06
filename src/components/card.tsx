@@ -1,7 +1,7 @@
 import "./card.css";
 
 type Props = {
-  data: { cover: string; title: string };
+  data: { id: string; cover: string; title: string };
 };
 
 function Card(props: Props) {
