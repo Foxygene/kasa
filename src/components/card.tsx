@@ -1,14 +1,16 @@
 import "./card.css";
-import logements from "../assets/logements.json";
 
-const logement = logements[0];
+type Props = {
+  data: { cover: string; title: string };
+};
 
-function Card() {
-  console.log(logement);
-
+function Card(props: Props) {
   return (
-    <div className="card" style={{ backgroundImage: `url(${logement.cover})` }}>
-      <a>{logement.title}</a>
+    <div
+      className="card"
+      style={{ backgroundImage: `url(${props.data.cover})` }}
+    >
+      <a>{props.data.title}</a>
     </div>
   );
 }
