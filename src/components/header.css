@@ -13,13 +13,13 @@
 }
 
 .navbar {
-  font-size: 1rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 12rem;
-  margin-left: 1rem;
+  margin-left: 3rem;
   font-family: Montserrat;
   white-space: nowrap;
 }

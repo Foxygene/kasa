@@ -6,8 +6,8 @@ function Header() {
     <div className="header">
       <img className="logo" src={logo}></img>
       <div className="navbar">
-        <a>Accueil</a>
-        <a>A Propos</a>
+        <a href="/">Accueil</a>
+        <a href="/about">A Propos</a>
       </div>
     </div>
   );

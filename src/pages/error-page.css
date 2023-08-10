@@ -1,0 +1,51 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.error .number {
+  color: #ff6060;
+  font-family: Montserrat;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 142.6%;
+  margin-bottom: 0;
+}
+
+.error p {
+  color: #ff6060;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+}
+
+.error a {
+  margin-top: 8rem;
+  color: #ff6060;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%; /* 1.24775rem */
+  text-decoration-line: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .error .number {
+    font-size: 18rem;
+    margin-top: 4rem;
+  }
+
+  .error p {
+    font-size: 2.25rem;
+  }
+
+  .error a {
+    font-size: 1.125rem;
+  }
+}
