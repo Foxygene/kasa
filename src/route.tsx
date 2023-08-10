@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import HomePage from "./pages/home-page";
+import HomePage from "./pages/HomePage";
 import ErrorPage from "./pages/ErrorPage";
 import logements from "./assets/logements.json";
 
