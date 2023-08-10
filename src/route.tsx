@@ -1,6 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 import HomePage from "./pages/home-page";
 import ErrorPage from "./pages/ErrorPage";
+import logements from "./assets/logements.json";
+
+const logementPages = logements.map((logement) => ({
+  path: `/logement/${logement.id}`,
+  element: <p>{logement.title}</p>,
+  errorElement: <ErrorPage />,
+}));
 
 export const router = createBrowserRouter([
   {
@@ -8,4 +15,5 @@ export const router = createBrowserRouter([
     element: <HomePage />,
     errorElement: <ErrorPage />,
   },
+  ...logementPages,
 ]);

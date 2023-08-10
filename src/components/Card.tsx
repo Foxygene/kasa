@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./card.css";
 
 type Props = {
@@ -6,12 +7,14 @@ type Props = {
 
 function Card(props: Props) {
   return (
-    <div
-      className="card"
-      style={{ backgroundImage: `url(${props.data.cover})` }}
-    >
-      <a>{props.data.title}</a>
-    </div>
+    <Link to={`/logement/${props.data.id}`}>
+      <div
+        className="card"
+        style={{ backgroundImage: `url(${props.data.cover})` }}
+      >
+        {props.data.title}
+      </div>
+    </Link>
   );
 }
 
