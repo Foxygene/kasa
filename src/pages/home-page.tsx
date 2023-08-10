@@ -1,6 +1,6 @@
-import Banner from "../components/banner";
-import Card from "../components/card";
-import Header from "../components/header";
+import Banner from "../components/Banner";
+import Card from "../components/Card";
+import Header from "../components/Header";
 import logements from "../assets/logements.json";
 
 function HomePage() {
