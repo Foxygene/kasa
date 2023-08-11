@@ -7,6 +7,8 @@
   background-image: url("../assets/bannerimg.jpg");
   background-position: right;
   background-size: 150%;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: darken;
   display: flex;
   align-items: center;
   padding: 1rem;
@@ -17,6 +19,7 @@
   color: #fff;
   font-family: Montserrat;
   font-size: 1.5rem;
+  filter: brightness(1);
 }
 
 @media screen and (min-width: 768px) {
