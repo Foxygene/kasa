@@ -1,14 +1,17 @@
+import Carrousel from "../components/Carrousel";
 import Header from "../components/Header";
 import { logement } from "../types/logement";
-import "./logement.css";
+import "./logementPage.css";
 
 function Logement(prop: logement) {
   console.log(prop);
+  const pictures = prop.data.pictures;
+
   return (
     <>
       <main>
         <Header />
-        <p>oui</p>
+        <Carrousel pictures={pictures} />
       </main>
     </>
   );
