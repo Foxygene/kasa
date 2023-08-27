@@ -7,13 +7,19 @@ function Carrousel(props: { pictures: string[] }) {
   const [slide, setSlide] = useState(0);
 
   function handleClickRight() {
-    if (slide + 1 === props.pictures.length) return;
+    if (slide + 1 === props.pictures.length) {
+      setSlide(0);
+      return;
+    }
 
     setSlide(slide + 1);
   }
 
   function handleClickLeft() {
-    if (slide - 1 === -1) return;
+    if (slide - 1 === -1) {
+      setSlide(props.pictures.length - 1);
+      return;
+    }
     setSlide(slide - 1);
   }
 
