@@ -6,7 +6,6 @@ import { logement } from "../types/logement";
 import "./logementPage.css";
 
 function Logement(prop: logement) {
-  console.log(prop);
   const pictures = prop.data.pictures;
 
   return (
