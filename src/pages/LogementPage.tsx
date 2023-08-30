@@ -14,7 +14,7 @@ function Logement(prop: logement) {
       <main>
         <Header />
         <Carrousel pictures={pictures} />
-        <div>
+        <div className="infos">
           <div className="logement-info">
             <h1>{prop.data.title}</h1>
             <p>{prop.data.location}</p>
