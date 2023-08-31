@@ -1,4 +1,5 @@
 import Carrousel from "../components/Carrousel";
+import Dropdown from "../components/Dropdown";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Stars from "../components/Stars";
@@ -32,6 +33,10 @@ function Logement(prop: logement) {
               <img src={prop.data.host.picture} />
             </div>
           </div>
+        </div>
+        <div className="logement-dropdown">
+          <Dropdown nom="Description" content={prop.data.description} />
+          <Dropdown nom="Équipements" content={prop.data.equipments} />
         </div>
       </main>
       <Footer />

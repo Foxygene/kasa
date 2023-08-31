@@ -129,4 +129,9 @@
     margin-right: 0.63rem;
     line-height: 200%;
   }
+
+  .logement-dropdown {
+    display: flex;
+    gap: 4.75rem;
+  }
 }
