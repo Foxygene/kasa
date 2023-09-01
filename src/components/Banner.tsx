@@ -1,10 +1,16 @@
 import "./banner.css";
 
-function Banner() {
+function Banner(props: {
+  content: string;
+  contentPostBr: string;
+  img: string;
+}) {
   return (
-    <div className="banner">
+    <div className="banner" style={{ backgroundImage: `url(${props.img})` }}>
       <a>
-        Chez vous,<br></br> partout et ailleurs
+        {props.content}
+        <br></br>
+        {props.contentPostBr}
       </a>
     </div>
   );

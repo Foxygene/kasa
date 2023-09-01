@@ -9,7 +9,11 @@ function HomePage() {
     <>
       <main>
         <Header />
-        <Banner />
+        <Banner
+          content="Chez vous,"
+          contentPostBr=" partout et ailleurs"
+          img="src/assets/bannerimg.jpg"
+        />
         <div className="list">
           {logements.map((logement) => (
             <Card key={logement.id} data={logement} />
