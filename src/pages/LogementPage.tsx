@@ -20,7 +20,9 @@ function Logement(prop: logement) {
             <p>{prop.data.location}</p>
             <ul className="tag-container">
               {prop.data.tags.map((tag) => (
-                <li className="tag">{tag}</li>
+                <li key={tag} className="tag">
+                  {tag}
+                </li>
               ))}
             </ul>
           </div>

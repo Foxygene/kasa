@@ -13,8 +13,8 @@ function Dropdown(props: { nom: string; content: string | string[] }) {
   if (Array.isArray(props.content))
     content = (
       <ul>
-        {props.content.map((equipement) => (
-          <li>{equipement}</li>
+        {props.content.map((equipement, i) => (
+          <li key={i}>{equipement}</li>
         ))}
       </ul>
     );
@@ -36,7 +36,7 @@ function Dropdown(props: { nom: string; content: string | string[] }) {
             transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
           }}
         >
-          <g clip-path="url(#clip0_193990_77)">
+          <g clipPath="url(#clip0_193990_77)">
             <path
               d="M8.91332 5.64983C9.29864 5.26451 9.9244 5.26451 10.3097 5.64983L16.2282 11.5683C16.6135 11.9536 16.6135 12.5794 16.2282 12.9647C15.8429 13.35 15.2171 13.35 14.8318 12.9647L9.60998 7.74288L4.38814 12.9616C4.00282 13.347 3.37707 13.347 2.99175 12.9616C2.60643 12.5763 2.60643 11.9506 2.99175 11.5652L8.91024 5.64675L8.91332 5.64983Z"
               fill="white"

@@ -7,7 +7,7 @@ import AboutPage from "./pages/AboutPage";
 
 const logementPages = logements.map((logement) => ({
   path: `/logement/${logement.id}`,
-  element: <Logement data={logement} />,
+  element: <Logement key={logement.id} data={logement} />,
   errorElement: <ErrorPage />,
 }));
 
