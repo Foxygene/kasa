@@ -32,6 +32,9 @@ function Carrousel(props: { pictures: string[] }) {
       <button onClick={handleClickLeft} className="carousel-button button-left">
         <img src={left} />
       </button>
+      <div className="counter">
+        {slide + 1}/{props.pictures.length}
+      </div>
       <button
         onClick={handleClickRight}
         className="carousel-button button-right"
