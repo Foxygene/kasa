@@ -3,13 +3,14 @@ import "./aboutPage.css";
 import Footer from "../components/Footer";
 import Dropdown from "../components/Dropdown";
 import Banner from "../components/Banner";
+import aboutbanner from "../assets/aboutbanner.jpg";
 
 export default function AboutPage() {
   return (
     <>
       <main>
         <Header />
-        <Banner content="" contentPostBr="" img="src/assets/aboutbanner.jpg" />
+        <Banner content="" contentPostBr="" img={aboutbanner} />
         <div className="dropdowns-container">
           <Dropdown
             nom="Fiabilité"

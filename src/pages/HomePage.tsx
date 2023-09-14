@@ -1,4 +1,5 @@
 import Banner from "../components/Banner";
+import bannerimg from "../assets/bannerimg.jpg";
 import Card from "../components/Card";
 import Header from "../components/Header";
 import logements from "../assets/logements.json";
@@ -12,7 +13,7 @@ function HomePage() {
         <Banner
           content="Chez vous,"
           contentPostBr=" partout et ailleurs"
-          img="src/assets/bannerimg.jpg"
+          img={bannerimg}
         />
         <div className="list">
           {logements.map((logement) => (
